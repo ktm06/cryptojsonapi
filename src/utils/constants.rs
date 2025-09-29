@@ -4,7 +4,7 @@ use std::env;
 pub static ADDRESS: Lazy<String> = Lazy::new(|| set_address());
 pub static PORT: Lazy<u16> = Lazy::new(|| set_port());
 
-
+// setting address
 fn set_address() -> String {
     dotenv::dotenv().ok();
     env::var("ADDRESS")

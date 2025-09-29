@@ -10,4 +10,5 @@ pub fn config(config: &mut web::ServiceConfig) {
     config.service(handlers::home_handler::exchange);
     config.service(handlers::home_handler::find_stats);
     config.service(handlers::home_handler::register);
+    config.service(handlers::home_handler::login);
 }
